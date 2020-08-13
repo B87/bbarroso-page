@@ -19,7 +19,7 @@ class Footer extends Component {
            </ul>
 
            <ul className="copyright">
-              <li>Open Sourced at <a title="Styleshout" href="http://www.styleshout.com/">Github</a></li>
+              <li>Open Sourced at <a title="Styleshout" href="https://github.com/B87/bbarroso.page">Github</a></li>
            </ul>
 
         </div>
