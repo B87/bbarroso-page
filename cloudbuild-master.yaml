@@ -1,0 +1,38 @@
+steps:
+  # Build image
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Build
+    args: ['build',
+      '-t', 'gcr.io/$PROJECT_ID/bbarroso.page:$SHORT_SHA',
+      '-t', 'gcr.io/$PROJECT_ID/bbarroso.page:latest',
+      '-f', 'Dockerfile', '.']
+
+  # Push docker image to registry
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'Push permanent'
+    args: 
+      - 'push'
+      - 'gcr.io/$PROJECT_ID/bbarroso.page:$SHORT_SHA'
+
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'Push latest'
+    args: 
+      - 'push'
+      - 'gcr.io/$PROJECT_ID/bbarroso.page:latest'
+
+  # Cloud Run deploy
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: Deploy
+    args:
+    - 'run'
+    - 'deploy'
+    - 'web-app'
+    - '--image'
+    - 'gcr.io/$PROJECT_ID/bbarroso.page:latest'
+    - '--region'
+    - 'us-central1'
+    - '--platform'
+    - 'managed'
+    - '--allow-unauthenticated'
+    - '--max-instances'
+    - '1'
