@@ -1,0 +1,165 @@
+{
+  "main": {
+    "name":"Bernat Barroso",
+    "occupation":"Software crafter",
+    "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "image":"profilepic.jpg",
+    "bio":"I'm a Polyvalent Software Engineer with a demonstrated history of working in a Big Data environment and leading/management capabilities, focused on business problems and results.\n\n Without a strong background in computer science, I managed to learn essential concepts and practices of software development such as design patterns, CI/CD or test-driven development and used them in real projects, providing solutions for my team’s problems.",
+    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "b.barroso87@gmail.com",
+    "phone": "+34 638109475",
+    "website": "https://www.bbarroso.page",
+    "resumedownload":"http://timbakerdev.com",
+    "address": {
+      "city":"Barcelona"
+    },
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/bernat-barroso-81210a94/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"http://github.com/B87",
+        "className":"fa fa-github"
+      },
+      {
+        "name":"fiverr",
+        "url":"https://www.fiverr.com/bernatbarroso",
+        "className":"fa fa-fiverr"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Programming skills",
+    "education":[
+      {
+        "school":"Universitat Autònoma de Barcelona (UAB)",
+        "degree":"B.A in Business and Technology",
+        "graduated":"July 2016",
+        "description":"This bachelor's degree aims to provide the alumni with traditional business knowlege and skills like marketing and plus the technoloy and information is used in a business"
+      }
+    ],
+    "other_certs" : [
+      {
+        "name" : "Convolutional Neural Networks",
+        "organization" : "Coursera",
+        "cert_url" : "https://www.coursera.org/account/accomplishments/verify/BTRCKT4PQM2L",
+        "graduated" : "December 2017"
+      },
+      {
+        "name" : "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization",
+        "organization" : "Coursera",
+        "cert_url" : "https://www.coursera.org/account/accomplishments/verify/NKP26TZLWS9Y",
+        "graduated" : "October 2017"
+      },
+      {
+        "name" : "Neural Networks and Deep Learning",
+        "organization" : "Coursera",
+        "cert_url" : "https://www.coursera.org/account/accomplishments/verify/C9EB9QKZ4RDQ",
+        "graduated" : "October 2017"
+      },
+      {
+        "name" : "Machine Learning",
+        "organization" : "Coursera",
+        "cert_url" : "https://www.coursera.org/account/accomplishments/verify/MGNRV6CGMAUV",
+        "graduated" : "April 2016"
+      },
+      {
+        "name" : "M101J : MongoDB for Java Developers",
+        "organization" : "MongoDB, Inc.",
+        "cert_url" : "http://university.mongodb.com/course_completion/82bb563c45924d8f82c6601cf4d34ada",
+        "graduated" : "February 2016"
+      }
+    ],
+    "work":[
+      {
+        "company":"GINDUMAC",
+        "title":"Techincal Lead",
+        "years":"September 2019 - Present",
+        "description":"Responsable of all technology assets of the company. The platform is based on AWS services and multiple programming languages, mainly PHP, Javascript and Python."
+      },
+      {
+        "company":"GINDUMAC",
+        "title":"Data Engineer",
+        "years":"October 2018 - July 2019",
+        "description":"Architect and developer of MIS, an application which provides relevant market data, scrapped from multiple websites, to internal personnel in order to optimize their decisions and operations. It is based on AWS services and written in Python and Java."
+      },
+      {
+        "company":"Everis",
+        "title":"Data Engineer",
+        "years":"July 2016 - November 2018",
+        "description":"Owner of diverse Apache Spark data processing projects for a financial institution, including the technical documentation, testing and performance analysis. All of them where based on an on-premises CDH hadoop cluster and written in Java"
+      },
+      {
+        "company":"Everis",
+        "title":"Software Architecture Intern",
+        "years":"October 2015 - June 2016",
+        "description":"During this internship I discovered my passion for software building ETL pipelines using SQL and Java in a big data environment."
+      },
+      {
+        "company":"Accenture",
+        "title":"Supply Chain Management Intern",
+        "years":"July 2015 - September 2015",
+        "description":"Worked there helping the analytics team, validating and cleaning data. We provided forecasts for supply chain optimization"
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "level":"80%"
+      },
+      {
+        "name":"Java",
+        "level":"80%"
+      },
+      {
+        "name":"PHP",
+        "level":"40%"
+      },
+      {
+        "name":"Javascript",
+        "level":"50%"
+      },
+      {
+        "name":"React",
+        "level":"50%"
+      },
+      {
+        "name":"CSS and HTML",
+        "level":"40%"
+      },
+      {
+        "name":"MongoDB",
+        "level":"80%"
+      },
+      {
+        "name":"PostgreSQL",
+        "level":"80%"
+      },
+      {
+        "name":"Elasticsearch",
+        "level":"60%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Web crawling/automation",
+        "category":"",
+        "image":"scraping.png",
+        "url":"https://www.fiverr.com/bernatbarroso/do-web-scraping-from-any-website"
+      }
+    ]
+  },
+  "testimonials":{
+    "testimonials":[
+      {
+        "text":"Working with Bernat was a very interesting experience. It is not often that you have somebody who is able to grasp a problem with all its details, and at the same time think oustide of the box and be pragmatic. His way of solving problems in the design of the data infrastructure was very creative and helped to reduce the complexity by a very high margin. Very highly recommended.",
+        "user":"Daniel Sapundziev - GINDUMAC Head of IoT & Data Science"
+      }
+    ]
+  }
+}
