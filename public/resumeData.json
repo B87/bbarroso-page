@@ -4,7 +4,7 @@
     "occupation":"Software crafter",
     "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
     "image":"profilepic.jpg",
-    "bio":"I'm a Polyvalent Software Engineer with a demonstrated history of working in a Big Data environment and leading/management capabilities, focused on business problems and results.\n\n Without a strong background in computer science, I managed to learn essential concepts and practices of software development such as design patterns, CI/CD or test-driven development and used them in real projects, providing solutions for my team’s problems.",
+    "bio":"I'm a polyvalent Software Engineer with a demonstrated history of building robust software and leading/management capabilities, always focused on business problems and results.\n\n Without a strong background in computer science, I managed to learn essential concepts and practices of software development such as design patterns, CI/CD or test-driven development and used them in real projects to provide solutions for my team’s problems.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "b.barroso87@gmail.com",
     "phone": "+34 638109475",
@@ -36,9 +36,10 @@
     "education":[
       {
         "school":"Universitat Autònoma de Barcelona (UAB)",
-        "degree":"B.A in Business and Technology",
+        "degree":"B.A in Business and Information Technology",
         "graduated":"July 2016",
-        "description":"This bachelor's degree aims to provide the alumni with traditional business knowlege and skills like marketing and plus the technoloy and information is used in a business"
+        "description":"This bachelor's degree aims to provide the alumni with traditional business knowlege and skills like marketing or accounting plus knowlege of how technology and information is used in a business.",
+        "degree_url" : "https://www.uab.cat/web/estudiar/ehea-degrees/general-information-1216708259085.html?param1=1231314902485"
       }
     ],
     "other_certs" : [
@@ -90,19 +91,19 @@
         "company":"Everis",
         "title":"Data Engineer",
         "years":"July 2016 - November 2018",
-        "description":"Owner of diverse Apache Spark data processing projects for a financial institution, including the technical documentation, testing and performance analysis. All of them where based on an on-premises CDH hadoop cluster and written in Java"
+        "description":"Owner of diverse Apache Spark data processing projects for a financial institution, including the technical documentation, testing and performance analysis. All of them where based on an on-premises CDH hadoop cluster and written in Java."
       },
       {
         "company":"Everis",
         "title":"Software Architecture Intern",
         "years":"October 2015 - June 2016",
-        "description":"During this internship I discovered my passion for software building ETL pipelines using SQL and Java in a big data environment."
+        "description":"During this internship I discovered my passion for software, building ETL pipelines using SQL and Java in a big data environment."
       },
       {
         "company":"Accenture",
         "title":"Supply Chain Management Intern",
         "years":"July 2015 - September 2015",
-        "description":"Worked there helping the analytics team, validating and cleaning data. We provided forecasts for supply chain optimization"
+        "description":"Worked there helping the analytics team, validating and cleaning data. We provided forecasts for supply chain optimization."
       }
     ],
     "skills":[
