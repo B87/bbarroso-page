@@ -39,12 +39,19 @@
 
 .fa-fiverr {
   content: url('https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/fiverr-512.png');
-  height: 25px;
-  width: 25px;
+  height: em;
+  width: 0.88em;
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
+  margin: 0 0 0 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1;
+  vertical-align: -10%
 }
 
 p {
