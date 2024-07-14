@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/b87/bbarroso.page/internal/server"
+	"github.com/b87/bbarroso-page/internal/server"
 )
 
 var serverCmd = &cobra.Command{

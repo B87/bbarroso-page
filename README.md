@@ -1,4 +1,4 @@
-# bbarroso.page
+# bbarroso-page
 
 My personal webpage
 

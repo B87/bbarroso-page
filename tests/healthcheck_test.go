@@ -7,7 +7,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/b87/bbarroso.page/internal/server"
+	"github.com/b87/bbarroso-page/internal/server"
 )
 
 func TestHealthCheck(t *testing.T) {

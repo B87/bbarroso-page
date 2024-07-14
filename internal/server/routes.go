@@ -6,7 +6,7 @@ import (
 	"github.com/a-h/templ"
 	"github.com/gin-gonic/gin"
 
-	"github.com/b87/bbarroso.page/internal/web"
+	"github.com/b87/bbarroso-page/internal/web"
 )
 
 func (s *Server) RegisterRoutes() http.Handler {

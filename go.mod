@@ -1,4 +1,4 @@
-module github.com/b87/bbarroso.page
+module github.com/b87/bbarroso-page
 
 go 1.22.5
 
