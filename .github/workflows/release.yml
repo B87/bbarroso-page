@@ -36,4 +36,4 @@ jobs:
           args: release --clean
           workdir: ./
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PATH }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
