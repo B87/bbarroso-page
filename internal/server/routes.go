@@ -6,7 +6,7 @@ import (
 	"github.com/a-h/templ"
 	"github.com/gin-gonic/gin"
 
-	"github.com/b87/bbarroso.page/cmd/web"
+	"github.com/b87/bbarroso.page/internal/web"
 )
 
 func (s *Server) RegisterRoutes() http.Handler {
@@ -17,7 +17,8 @@ func (s *Server) RegisterRoutes() http.Handler {
 	})
 	r.GET("/healthcheck", s.HealthCheckHandler)
 
-	r.Static("/assets", "./cmd/web/assets")
+	r.Static("/assets", "./assets")
+	r.StaticFile("/favicon.ico", "./assets/favicon.ico")
 
 	return r
 }

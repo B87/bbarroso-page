@@ -6,8 +6,8 @@ all: build
 build:
 	@echo "Building..."
 	@templ generate
-	@tailwindcss -i cmd/web/assets/css/input.css -o cmd/web/assets/css/output.css
-	@go build -o tmp/bbarroso cmd/api/main.go
+	@tailwindcss -i assets/css/input.css -o assets/css/output.css
+	@go build -o tmp/bbarroso
 
 docker:
 	@echo "Building Docker Image..."
@@ -15,7 +15,7 @@ docker:
 
 # Run the application
 run:
-	@go run cmd/api/main.go
+	@go run main.go server
 
 
 # Test the application
@@ -26,7 +26,7 @@ test:
 # Clean the binary
 clean:
 	@echo "Cleaning..."
-	@rm -f main
+	@sudo kill $(sudo lsof -n -i :8080 | grep LISTEN | awk '{print $2}')
 
 # Live Reload
 watch:

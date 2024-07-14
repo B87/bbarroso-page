@@ -3,12 +3,9 @@ before:
   hooks:
     - go mod tidy
 
-env:
-  - PACKAGE_PATH=github.com/b87/bbarroso.page/cmd
-
 builds:
   - binary: "bbarroso"
-    main: ./cmd/api
+    main: ./
     goos:
       - darwin
       - linux
