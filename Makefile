@@ -7,17 +7,15 @@ build:
 	@echo "Building..."
 	@templ generate
 	@tailwindcss -i cmd/web/assets/css/input.css -o cmd/web/assets/css/output.css
-	@go build -o main cmd/api/main.go
+	@go build -o tmp/bbarroso cmd/api/main.go
 
 docker:
 	@echo "Building Docker Image..."
-	@make build
-	@docker build -t "bbarroso.page:latest" --load .
+	@docker build -t "bbarroso:latest" --load .
 
 # Run the application
 run:
 	@go run cmd/api/main.go
-
 
 
 # Test the application
