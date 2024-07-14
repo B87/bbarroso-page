@@ -1,18 +1,20 @@
+# Fetch dependencies
 FROM golang:latest AS fetch-stage
-COPY go.mod go.sum ./
 WORKDIR /app
+COPY go.mod go.sum ./
 RUN go mod download
 
 # Generate templ
 FROM ghcr.io/a-h/templ:latest AS generate-stage
-COPY --chown=65532:65532 . /app
 WORKDIR /app
+COPY --from=fetch-stage /app /app
+COPY . /app
 RUN ["templ", "generate"]
 
 # Build binary
 FROM golang:latest AS build-stage
-COPY --from=generate-stage --chown=root:root /app /app
 WORKDIR /app
+COPY --from=generate-stage /app /app
 RUN CGO_ENABLED=0 go build -o /app/bbarroso
 
 # Final image
