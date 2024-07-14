@@ -1,5 +1,6 @@
 /*
-Copyright © 2022 NAME HERE <EMAIL ADDRESS>
+Main file to run the application.
+It calls the Execute function from the cmd package using cobra
 */
 package main
 

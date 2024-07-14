@@ -1,6 +1,6 @@
 FROM golang:latest AS fetch-stage
-WORKDIR /app
 COPY go.mod go.sum ./
+WORKDIR /app
 RUN go mod download
 
 # Generate templ
@@ -11,12 +11,13 @@ RUN ["templ", "generate"]
 
 # Build binary
 FROM golang:latest AS build-stage
-COPY --from=generate-stage /app /app
+COPY --from=generate-stage --chown=root:root /app /app
 WORKDIR /app
-RUN CGO_ENABLED=0 GOOS=linux go build -o /app/bbarroso /app/main.go
+RUN CGO_ENABLED=0 go build -o /app/bbarroso
 
 # Final image
 FROM gcr.io/distroless/base-debian12 AS deploy-stage
+WORKDIR /
 COPY --from=build-stage /app/bbarroso /bbarroso
 USER nonroot:nonroot
 ENTRYPOINT ["/bbarroso"]

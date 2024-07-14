@@ -1,5 +1,5 @@
 /*
-Copyright © 2022 NAME HERE <EMAIL ADDRESS>
+Cobra root command, it is the entry point for the CLI app.
 */
 package cmd
 
