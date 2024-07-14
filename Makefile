@@ -7,7 +7,7 @@ build:
 	@echo "Building..."
 	@templ generate
 	@tailwindcss -i assets/css/input.css -o assets/css/output.css
-	@go build -o tmp/bbarroso
+	@go build -o bbarroso
 
 docker:
 	@echo "Building Docker Image..."
@@ -15,7 +15,7 @@ docker:
 
 # Run the application
 run:
-	@go run main.go server
+	@./bbarroso
 
 
 # Test the application
@@ -45,4 +45,8 @@ watch:
 	    fi; \
 	fi
 
-.PHONY: all build run test clean
+release-snapshot:
+	@echo "Creating snapshot release..."
+	@goreleaser release --snapshot --clean
+
+.PHONY: all build run test clean watch release-check

@@ -28,3 +28,9 @@ tmp/
 # Project build
 main
 .DS_Store
+
+# Goreleaser
+dist
+
+bbarroso
+dist/

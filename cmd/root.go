@@ -12,7 +12,7 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "bbarroso.page",
+	Use:   "bbarroso",
 	Short: "bbarroso.page is a personal website",
 	Long:  ``,
 }

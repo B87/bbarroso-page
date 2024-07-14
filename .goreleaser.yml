@@ -2,13 +2,11 @@ version: 2
 before:
   hooks:
     - go mod tidy
-
 env:
   - PACKAGE_PATH=github.com/b87/bbarroso.page
 
 builds:
   - binary: "bbarroso"
-    main: ./
     goos:
       - darwin
       - linux
@@ -44,3 +42,11 @@ checksum:
 dockers:
   - image_templates:
       - "gcr.io/b87/bbarroso:{{ .Tag }}"
+    dockerfile: Dockerfile
+    build_flag_templates:
+      - "--pull"
+      - "--label=org.opencontainers.image.created={{.Date}}"
+      - "--label=org.opencontainers.image.name={{.ProjectName}}"
+      - "--label=org.opencontainers.image.revision={{.FullCommit}}"
+      - "--label=org.opencontainers.image.version={{.Version}}"
+      - "--label=org.opencontainers.image.source={{.GitURL}}"
