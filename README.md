@@ -9,6 +9,7 @@ My personal webpage
 ## Release
 
 ```bash
-git tag v0.0.1 main
-git push origin tag v0.0.1
+git tag -d v0.0.12
+git tag v0.0.12 main
+git push origin tag v0.0.12
 ```
