@@ -41,7 +41,7 @@ checksum:
 
 dockers:
   - image_templates:
-      - "gcr.io/b87/bbarroso:{{ .Tag }}"
+      - "ghcr.io/b87/bbarroso:{{ .Tag }}"
     dockerfile: Dockerfile
     build_flag_templates:
       - "--pull"
