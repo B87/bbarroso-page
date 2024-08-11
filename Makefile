@@ -6,7 +6,7 @@ all: build
 build:
 	@echo "Building..."
 	@templ generate
-	@tailwindcss -i assets/css/input.css -o assets/css/output.css
+	@tailwindcss -i server/assets/css/input.css -o server/assets/css/output.css
 	@go build -o bbarroso
 
 docker:
