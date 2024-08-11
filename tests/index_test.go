@@ -10,7 +10,7 @@ import (
 	"github.com/b87/bbarroso-page/server"
 )
 
-func TestHealthCheck(t *testing.T) {
+func TestIndex(t *testing.T) {
 	s := &server.Server{}
 	r := gin.New()
 	r.GET("/", s.HealthCheckHandler)

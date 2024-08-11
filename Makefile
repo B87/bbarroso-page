@@ -15,7 +15,7 @@ docker:
 
 # Run the application
 run:
-	@./bbarroso
+	@./bbarroso server
 
 
 # Test the application

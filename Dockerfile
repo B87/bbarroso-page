@@ -4,4 +4,4 @@ WORKDIR /
 COPY bbarroso /bbarroso
 EXPOSE 8080
 USER nonroot:nonroot
-ENTRYPOINT ["/bbarroso"]
+CMD ["/bbarroso", "server"]

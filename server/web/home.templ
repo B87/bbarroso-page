@@ -3,7 +3,7 @@ package web
 templ Index() {
 	@Base() {
 		<div class="bg-white shadow-md rounded p-6 mx-8">
-			<div class="flex flex-col md:flex-row">
+			<div class="mt-8 flex flex-col md:flex-row">
 				<div class="w-full md:w-1/4 flex justify-center items-center mb-4 md:mb-0">
 					<img src="/assets/images/profilepic.jpg" alt="Profile Picture" class="rounded-full w-40 h-40 object-cover"/>
 				</div>
@@ -23,7 +23,7 @@ templ Index() {
 				</div>
 			</div>
 			<div class="mt-4 p-5 mx-8">
-				<h2 class="text-xl font-semibold mb-5 text-teal-600">Work Experience</h2>
+				<h2 class="text-2xl font-semibold mb-5 text-teal-600">Work Experience</h2>
 				<ul class="relative pl-10 mt-5">
 					<li class="relative mb-7 pl-5 before:absolute before:top-0 before:bottom-0 before:left-0 before:w-0.5 before:bg-teal-600">
 						<p class="font-bold">GINDUMAC - CTO</p>
@@ -31,7 +31,7 @@ templ Index() {
 						<p>
 							Responsible for all technology assets of the company.
 							<br/>
-							The platform is based on AWS services and multiple programming languages, mainly PHP, Javascript and Python.
+							The platform is based on AWS/GCP services and multiple programming languages, mainly Golang, Typescript and Python.
 						</p>
 					</li>
 					<li class="relative mb-7 pl-5 before:absolute before:top-0 before:bottom-0 before:left-0 before:w-0.5 before:bg-teal-600">
@@ -56,8 +56,8 @@ templ Index() {
 					</li>
 				</ul>
 			</div>
-			<div class="mt-4 education-section p-5 rounded-lg  mx-8">
-				<h2 class="text-xl font-semibold mb-5 text-teal-600">Formal Education</h2>
+			<div class="pl-5 rounded-lg  mx-8">
+				<h2 class="text-2xl font-semibold mb-5 text-teal-600">Formal Education</h2>
 				<ul class="list-none p-0">
 					<li class="mb-5">
 						<p class="font-bold mb-1">Universitat Autònoma de Barcelona (UAB) - B.A in Business and Information Technology</p>
@@ -66,18 +66,8 @@ templ Index() {
 					</li>
 				</ul>
 			</div>
-			<div class="mt-4 education-section p-5 rounded-lg  mx-8">
-				<h2 class="text-xl font-semibold mb-5 text-teal-600">Formal Education</h2>
-				<ul class="education-list list-none p-0">
-					<li class="education-item mb-5">
-						<p class="font-bold mb-1">Universitat Autònoma de Barcelona (UAB) - B.A in Business and Information Technology</p>
-						<p class="graduation-date italic text-gray-600 mb-2">Graduated: July 2016</p>
-						<p class="education-description leading-relaxed text-gray-800">This bachelor's degree aims to provide the alumni with traditional business knowledge and skills, such as marketing, accounting, or macroeconomics, plus knowledge of how the use of information technology enables the improvement of existing business models and disruptive new ones.</p>
-					</li>
-				</ul>
-			</div>
-			<div class="mt-4 p-5 mx-8">
-				<h2 class="text-xl font-semibold mb-5 text-teal-600">Certifications</h2>
+			<div class="pl-5 mx-8">
+				<h2 class="text-2xl font-semibold mb-5 text-teal-600">Certifications</h2>
 				<ul class="certification-list list-none p-0">
 					<li class="certification-item mb-5">
 						<p class="font-bold mb-1">Convolutional Neural Networks - Coursera</p>
@@ -106,79 +96,18 @@ templ Index() {
 					</li>
 				</ul>
 			</div>
-			<div class="mt-4 p-5 mx-8">
-				<h2 class="text-xl font-semibold mb-5 text-teal-600">Skills</h2>
+			<div class="mt-5 pl-5 mx-8 mb-10">
+				<h2 class="text-2xl font-semibold mb-5 text-teal-600">Skills</h2>
 				<div class="flex flex-col md:flex-row flex-wrap space-y-4 md:space-y-0 md:space-x-4">
 					<div class="bg-gray-200 rounded px-4 py-2">Golang</div>
 					<div class="bg-gray-200 rounded px-4 py-2">Python</div>
+					<div class="bg-gray-200 rounded px-4 py-2">Java</div>
 					<div class="bg-gray-200 rounded px-4 py-2">GCP / AWS</div>
-					<div class="bg-gray-200 rounded px-4 py-2">AI</div>
+					<div class="bg-gray-200 rounded px-4 py-2">AI / LLMs</div>
 					<div class="bg-gray-200 rounded px-4 py-2">PostgreSQL</div>
 					<div class="bg-gray-200 rounded px-4 py-2">Elasticsearch</div>
-					<div class="bg-gray-200 rounded px-4 py-2">MongoDB</div>
 				</div>
 			</div>
-			<div class="mt-4 p-5 mx-8">
-				<h2 class="text-xl font-semibold mb-5 text-teal-600">Testimonials</h2>
-				<ul class="list-none p-0">
-					<li class="mb-5">
-						<p class="italic text-gray-800 mb-2">"Working with Bernat was a very interesting experience. It is not often that you have somebody who is able to grasp a problem with all its details, and at the same time think outside of the box and be pragmatic. His way of solving problems in the design of the data infrastructure was very creative and helped to reduce the complexity by a very high margin. Very highly recommended."</p>
-						<p class="font-semibold text-gray-600">- Daniel Sapundziev - GINDUMAC Head of IoT & Data Science</p>
-					</li>
-				</ul>
-			</div>
 		</div>
-		<style>
-			/* Timeline Styles */
-			.timeline {
-				position: relative;
-				padding-left: 40px;
-				margin-top: 20px;
-			}
-
-			.timeline::before {
-				content: '';
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 20px;
-				width: 2px;
-				background: #00796b;
-			}
-
-			.timeline-item {
-				position: relative;
-				margin-bottom: 30px;
-				padding-left: 20px;
-			}
-
-			.timeline-item::before {
-				content: '';
-				position: absolute;
-				left: -11px;
-				top: 0;
-				width: 10px;
-				height: 10px;
-				border-radius: 50%;
-				background: #00796b;
-				border: 2px solid #fff;
-			}
-
-			.timeline-item p {
-				margin: 5px 0;
-			}
-
-			.timeline-item .years {
-				font-style: italic;
-				color: #555;
-				margin-bottom: 10px;
-			}
-
-			.timeline-item:last-child {
-				margin-bottom: 0;
-			}
-
-
-		</style>
 	}
 }
